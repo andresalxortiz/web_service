@@ -1,26 +1,13 @@
 import axios from "axios";
 import { 
   DELETE_VEHICLE, 
-  HANDLE_ERRORS, 
   RETRIEVE_VEHICLE, 
   RETRIEVE_VEHICLES,
 } from "./actions/types";
 
 export const createVehicle = ( add_vehicle, history ) => async (dispatch) => {
-  try {
-    await axios.post("http://localhost:8080/vehicles", add_vehicle);
-    history.push("/vehicles");
-    dispatch({
-      type: HANDLE_ERRORS,
-      payload: {}
-    })
-  }
-  catch (error) {
-    dispatch({
-      type: HANDLE_ERRORS,
-      payload: error.response.data
-    })
-  }
+  await axios.post("http://localhost:8080/vehicles", add_vehicle);
+  history.push("/vehicles");
 }
 
 export const retrieveVehicles = () => async (dispatch) => {

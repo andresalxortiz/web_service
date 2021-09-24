@@ -37,7 +37,6 @@ class FilteredList extends Component {
   
     render() {
       const { vehicles } = this.props.vehicles;
-      console.log(this.props.vehicles)
   
       let PageContent;
       let VehicleContent = [];

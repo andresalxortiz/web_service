@@ -1,0 +1,7 @@
+com\vehicle\service\VehicleController.class
+com\vehicle\service\VehicleNotFoundException.class
+com\vehicle\service\Vehicle.class
+com\vehicle\service\VehicleNotFoundMessage.class
+com\vehicle\service\ServiceApplication.class
+com\vehicle\service\ServletInitializer.class
+com\vehicle\service\VehicleRegistration.class

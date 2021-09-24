@@ -21,7 +21,8 @@ class Client extends Component {
                     </div>
                 <hr className="mb-5"/>
 
-                <p>For more information checkout the documentation</p>
+                <p>For more information checkout the GitHub documentation.</p>
+                <a class="btn btn-dark me-2" target="_blank" rel="noreferrer" href="https://github.com/andresalxortiz/web_service" role="button">GitHub</a>
             </div>
         );
     }
